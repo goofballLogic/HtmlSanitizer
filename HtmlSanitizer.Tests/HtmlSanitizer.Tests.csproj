@@ -72,7 +72,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="OWASP\XSS\README.md" />
     <None Include="packages.config" />
   </ItemGroup>
   <Choose>
