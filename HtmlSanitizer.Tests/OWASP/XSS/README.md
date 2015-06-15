@@ -33,7 +33,6 @@ For each test:
         . . .
 
         [Test]
-        // ReSharper disable once InconsistentNaming
         public void XSSLocatorTest()
         {
             var sanitizer = new HtmlSanitizer();
