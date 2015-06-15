@@ -18,7 +18,7 @@ For each test:
     /// </summary>
     [TestFixture]
     [Category("Unit")]
-    public class XSSLocatorTest
+    public class XSSLocatorTests
     {
         private string Input { get; set; }
         private string Expected { get; set; }
