@@ -18,7 +18,7 @@ For each test:
     /// </summary>
     [TestFixture]
     [Category("Unit")]
-    public class HtmlSanitizerTests
+    public class XSSLocatorTest
     {
         private string Input { get; set; }
         private string Expected { get; set; }
