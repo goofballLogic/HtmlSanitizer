@@ -4,6 +4,9 @@ using NUnit.Framework;
 
 namespace Ganss.XSS.Tests.OWASP.XSS.XSS_Locator
 {
+    /// <summary>
+    /// Tests <a href="https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet#XSS_Locator">XSS Locator</a>
+    /// </summary>
     [TestFixture]
     [Category("Unit")]
     public class HtmlSanitizerTests
