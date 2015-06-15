@@ -12,7 +12,7 @@ For each test:
 
 ##Example
 
-```
+```csharp
     /// <summary>
     /// Tests <a href="https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet#XSS_Locator">XSS Locator</a>
     /// </summary>
