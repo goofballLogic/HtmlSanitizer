@@ -29,6 +29,8 @@ For each test:
             Input = ReadResource("input.html");
             Expected = ReadResource("expected.html");
         }
+        
+        . . .
 
         [Test]
         // ReSharper disable once InconsistentNaming
