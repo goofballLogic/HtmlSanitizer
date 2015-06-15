@@ -62,7 +62,7 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="OWASP\XSS\XSS_Locator\Test.cs" />
+    <Compile Include="OWASP\XSS\XSS_Locator\XSSLocatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests.cs" />
   </ItemGroup>

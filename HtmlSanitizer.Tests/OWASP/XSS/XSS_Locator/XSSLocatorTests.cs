@@ -9,7 +9,7 @@ namespace Ganss.XSS.Tests.OWASP.XSS.XSS_Locator
     /// </summary>
     [TestFixture]
     [Category("Unit")]
-    public class HtmlSanitizerTests
+    public class XSSLocatorTests
     {
         private string Input { get; set; }
         private string Expected { get; set; }
@@ -23,13 +23,12 @@ namespace Ganss.XSS.Tests.OWASP.XSS.XSS_Locator
 
         private static string ReadResource(string name)
         {
-            var resourceName = typeof (HtmlSanitizerTests).Namespace + string.Format(".{0}", name);
+            var resourceName = typeof (XSSLocatorTests).Namespace + string.Format(".{0}", name);
             var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceName);
             return stream == null ? string.Empty : new StreamReader(stream).ReadToEnd();
         }
 
-        [Test]
-        // ReSharper disable once InconsistentNaming
+        [Test]        
         public void XSSLocatorTest()
         {
             var sanitizer = new HtmlSanitizer();
