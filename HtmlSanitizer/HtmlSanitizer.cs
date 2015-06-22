@@ -307,6 +307,16 @@ namespace Ganss.XSS
         }
 
         /// <summary>
+        /// Creates inline representations of resources which are linked by this document
+        /// </summary>
+        /// <param name="html">The HTML to change.</param>
+        /// <returns>HTML with inline representations of linked resources</returns>
+        public string InlineResources(string html)
+        {
+            throw new NotImplementedException();
+        }
+
+        /// <summary>
         /// Sanitizes the specified HTML.
         /// </summary>
         /// <param name="html">The HTML to sanitize.</param>
