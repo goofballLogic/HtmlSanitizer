@@ -75,10 +75,9 @@
   <ItemGroup>
     <None Include="OWASP\XSS\README.md" />
     <None Include="packages.config" />
+    <None Include="ResourceInlining\README.md" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ResourceInlining\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="OWASP\XSS\XSS_Locator\expected.html" />
     <EmbeddedResource Include="OWASP\XSS\XSS_Locator\input.html" />
