@@ -9,6 +9,7 @@ namespace Ganss.XSS.Tests.OWASP.XSS.XSS_Locator
     /// </summary>
     [TestFixture]
     [Category("Unit")]
+    [Category("OWASP")]
     public class XSSLocatorTests
     {
         private string Input { get; set; }
