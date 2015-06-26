@@ -24,6 +24,8 @@ namespace Ganss.XSS.Tests.ResourceInlining.WithoutBaseTag
             expectedResults.TryAdd("Basic_InvalidOutput", ReadResource("basic_invalidoutput.html"));
             expectedResults.TryAdd("Import", ReadResource("import.html"));
             expectedResults.TryAdd("ImportOutput", ReadResource("importoutput.html"));
+            expectedResults.TryAdd("Fontface", ReadResource("fontface.html"));
+            expectedResults.TryAdd("FontfaceOutput", ReadResource("fontfaceoutput.html"));
         }
 
         private static string ReadResource(string name)
@@ -49,6 +51,9 @@ namespace Ganss.XSS.Tests.ResourceInlining.WithoutBaseTag
 
             actual = sanitizer.InlineResources(expectedResults["Import"]);
             Assert.That(actual, Is.EqualTo(expectedResults["ImportOutput"]));
+
+            actual = sanitizer.InlineResources(expectedResults["Fontface"]);
+            Assert.That(actual, Is.EqualTo(expectedResults["FontfaceOutput"]));
         }
     }
 }
