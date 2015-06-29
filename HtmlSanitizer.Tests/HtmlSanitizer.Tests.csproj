@@ -82,6 +82,7 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="ResourceInlining\ImageTags\BasicTests.cs" />
     <Compile Include="ResourceInlining\LinkStylesheet\FontFaceTests.cs" />
     <Compile Include="ResourceInlining\LinkStylesheet\ImportTests.cs" />
     <Compile Include="ResourceInlining\LinkStylesheet\InvalidTests.cs" />
@@ -100,10 +101,21 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Server\logo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="App.config" />
     <None Include="OWASP\XSS\README.md" />
     <None Include="packages.config" />
     <None Include="ResourceInlining\README.md" />
+    <EmbeddedResource Include="ResourceInlining\ImageTags\Basic\expected.html" />
+    <EmbeddedResource Include="ResourceInlining\ImageTags\Basic\input.html" />
+    <Content Include="Server\import.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Server\fontface.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Server\basic.css">

@@ -5,9 +5,9 @@ These tests verify that resources external to the supplied HTML are successfully
 ##Elements which must be inlined:
 
 1. CSS
-	- LINKed stylesheets	
-	- @imported stylesheets
-	- font-faces
+	v LINKed stylesheets	
+	v @imported stylesheets
+	v font-faces
 2. Images
 	- IMG tags
 
