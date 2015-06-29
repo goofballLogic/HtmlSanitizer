@@ -1,5 +1,4 @@
-﻿using System.IO;
-using System.Reflection;
+﻿using Ganss.XSS.Tests.Shared;
 using NUnit.Framework;
 
 namespace Ganss.XSS.Tests.OWASP.XSS.XSS_Locator
@@ -8,7 +7,6 @@ namespace Ganss.XSS.Tests.OWASP.XSS.XSS_Locator
     /// Tests <a href="https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet#XSS_Locator">XSS Locator</a>
     /// </summary>
     [TestFixture]
-    [Category("Unit")]
     [Category("OWASP")]
     public class XSSLocatorTests
     {
@@ -18,18 +16,11 @@ namespace Ganss.XSS.Tests.OWASP.XSS.XSS_Locator
         [SetUp]
         public void ReadResources()
         {
-            Input = ReadResource("input.html");
-            Expected = ReadResource("expected.html");
+            Input = Utils.ReadResourceRelative(this, "input.html");
+            Expected = Utils.ReadResourceRelative(this, "expected.html");
         }
 
-        private static string ReadResource(string name)
-        {
-            var resourceName = typeof (XSSLocatorTests).Namespace + string.Format(".{0}", name);
-            var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceName);
-            return stream == null ? string.Empty : new StreamReader(stream).ReadToEnd();
-        }
-
-        [Test]        
+        [Test]
         public void XSSLocatorTest()
         {
             var sanitizer = new HtmlSanitizer();
