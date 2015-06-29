@@ -83,6 +83,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="ResourceInlining\ImageTags\BasicTests.cs" />
+    <Compile Include="ResourceInlining\LinkStylesheet\ImageInCSSTests.cs" />
     <Compile Include="ResourceInlining\LinkStylesheet\FontFaceTests.cs" />
     <Compile Include="ResourceInlining\LinkStylesheet\ImportTests.cs" />
     <Compile Include="ResourceInlining\LinkStylesheet\InvalidTests.cs" />
@@ -101,6 +102,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ResourceInlining\LinkStylesheet\ImageInCSS\expected.html" />
+    <EmbeddedResource Include="ResourceInlining\LinkStylesheet\ImageInCSS\input.html" />
+    <Content Include="Server\image.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Server\logo.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
