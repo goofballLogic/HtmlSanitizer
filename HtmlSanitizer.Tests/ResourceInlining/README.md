@@ -13,6 +13,8 @@ These tests verify that resources external to the supplied HTML are successfully
 	- nested @import statements
 	- possible duplicate statements
 	- append to existing style tag
+	- @media ?
+	- @document
 
 2. Images
 	- IMG tags
@@ -20,6 +22,7 @@ These tests verify that resources external to the supplied HTML are successfully
 		- background-image
 		- border-image
 		- list-style-image
+	- SVG ?
 
 
 ## Cross-cutting concerns
